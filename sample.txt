@@ -1,0 +1,11 @@
+# ubuntu 접속
+docker run -i -t -v $HOME:$HOME -e ko_KR.UTF-8 -e PYTHONIOENCODING=utf-8 ubuntu-phantomjs /bin/bash
+# minuconda 접속
+docker run -i -t -v continuumio/miniconda3 /bin/bash
+
+# 컨테이너 일시적으로 나오기 ctrl+P,Q
+# docker ps -- docker 프로그램 컨테이너 ID 보기
+# docker commit [컨테이너ID] [리포지터리명]:[태그이름]
+# docker attach [컨테이너ID]
+
+
