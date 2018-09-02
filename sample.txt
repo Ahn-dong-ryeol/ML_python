@@ -1,7 +1,7 @@
 # ubuntu 접속
-docker run -i -t -v $HOME:$HOME -e ko_KR.UTF-8 -e PYTHONIOENCODING=utf-8 ubuntu-phantomjs /bin/bash
+docker run -i -t -v /Users/home/docker/mlearn:/Users/home/docker/mlearn -e ko_KR.UTF-8 -e PYTHONIOENCODING=utf-8 ubuntu-phantomjs /bin/bash
 # minuconda 접속
-docker run -i -t -v continuumio/miniconda3 /bin/bash
+docker run -i -t -v /User/home/continuumio/miniconda3 /bin/bash
 
 # 컨테이너 일시적으로 나오기 ctrl+P,Q
 # docker ps -- docker 프로그램 컨테이너 ID 보기
