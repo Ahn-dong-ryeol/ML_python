@@ -1,7 +1,10 @@
+# selenium import하기
 from selenium import webdriver
 
 url = "https://nid.naver.com/nidlogin.login"
 # PhantomJS 드라이버 추출하기 --- (※1)
+# 각 브라우저에 대응되는 드라이버 선택
+# webdriver.Firefox, webdriver.Chrome 등등
 browser = webdriver.PhantomJS()
 
 # 3초 대기하기 --- (※2)
@@ -9,6 +12,7 @@ browser.implicitly_wait(3)
 
 # 로그인
 # URL 읽어 들이기 --- (※3)
+## 특수키 입력 시, from selenium.webdriver.common.keys import keys
 browser.get(url)
 element_id = browser.find_element_by_id("id") # 아이디 텍스트 입력상자
 element_id.clear() #텍스트 상자 내 입력된 글자 삭제

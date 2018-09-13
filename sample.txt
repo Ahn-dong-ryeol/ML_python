@@ -8,4 +8,3 @@ docker run -i -t -v /User/home/continuumio/miniconda3 /bin/bash
 # docker commit [컨테이너ID] [리포지터리명]:[태그이름]
 # docker attach [컨테이너ID]
 
-

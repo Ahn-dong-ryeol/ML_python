@@ -1,3 +1,4 @@
+# selenium import하기
 from selenium import webdriver
 
 url = "http://www.naver.com/"
